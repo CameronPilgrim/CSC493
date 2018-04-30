@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" href="css/Questionnaire_2(amountSlider).css">
+  <?php require 'connect.php';?>
+</head>
+<div class="cell c6911">
+  <div data-gjs="navbar" id="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="/Homepage.html" target="_blank" class="navbar-brand"><img src="TA Logo.png" alt="Terra Administrators"/></a>
+      <div id="iwtm63" class="navbar-burger">
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+      </div>
+      <div data-gjs="navbar-items" class="navbar-items-c">
+        <nav data-gjs="navbar-menu" class="navbar-menu">
+          <a href="#" class="navbar-menu-link">About</a>
+          <a href="#" class="navbar-menu-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bodyContainer" class="row bodyContainer">
+  <div id="it7f8q" class="cell">
+    <section class="bdg-sect">
+      <h1 class="heading">
+        <div id="getAn" class="getAn">Get an
+        </div>
+        <b id="onlineQuote" class="onlineQuote">Online Quote
+        </b>
+      </h1>
+      <p class="paragraph">Depending on your health and lifestyle, you may qualify for a discount.
+      </p>
+      <section class="bdg-sect">
+        <h1 class="heading">Choose an amount of cover from the slider
+        </h1>
+        <p class="paragraph">And we'll provide several time frames to choose from!
+        </p>
+      </section>
+    </section>
+  </div>
+  <div id="rightColumn" class="rightColumn">
+    <div id="questionnaireBox" class="questionnaireBox">
+      <div id="iqs77y" class="row">
+      </div>
+      <div id="chooseAmount" class="chooseAmount">Choose an amount.
+      </div>
+      <div class="slidecontainer">
+        <input type="range" name="amountRange" min="10000" max="1000000" value="10000" onchange="this.nextElementSibling.value=this.value" step="10000" id="rangeSlider"/>
+        <input type="number" name="amountInput" min="10000" max="20" value="0" onchange="this.previousElementSibling.value=this.value" id="rangeOutput"/>
+      </div>
+      <a href="Questionnaire_3.html"><button type="button" id="next">Next
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+<head>
+  <link rel="stylesheet" href="css/Questionnaire_1(age).css">
+  <?php require 'connect.php';?>
+</head>
+<div class="cell c6911">
+  <div data-gjs="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-brand"><img src="TA Logo.png" alt="Terra Administrators"/></a>
+      <a title="Terra Administrators" class="c11280">Link</a>
+      <div id="iwtm63" class="navbar-burger">
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+      </div>
+      <div data-gjs="navbar-items" class="navbar-items-c">
+        <nav data-gjs="navbar-menu" class="navbar-menu">
+          <a href="#" class="navbar-menu-link">About</a>
+          <a href="#" class="navbar-menu-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="iyrmrl" class="row c3323">
+  <div id="it7f8q" class="cell">
+    <section class="bdg-sect">
+      <h1 class="heading">
+        <div class="c9543">Get an
+        </div>
+        <b class="c5606">Online Quote
+        </b>
+      </h1>
+      <p class="paragraph">Taking our online questionnaire will provide you with a quote in less than 10 minutes!
+      </p>
+      <section class="bdg-sect">
+        <h1 class="heading">Why choose us?
+        </h1>
+        <p class="paragraph">[Insert positive blurbs about Terra Admin. here]
+        </p>
+      </section>
+    </section>
+  </div>
+  <div class="cell c6911">
+    <div id="QuestionnaireBox" class="cell c6593">
+      <div class="c7141">What type of quote are you looking for?
+      </div>
+	  <!-- This is a call to the php document that connects to the database
+	  The file path should lead to the webfolder where connect.php is stored-->
+	  <form action="C:\xampp\htdocs\connect.php" method="post">
+      <button type="button" name = quote value = life  id="ixmd3l">Life Cover</button>
+      <button type="button" name = quote value = mortgage class="c6113">Mortgage Cover</button>
+      <button type="button" name = quote value = income class="c6090">Income Protection </button>
+      <button type="button" name = quote value = funeral class="c6067">Funeral Cover</button>
+	  </form>
+      <div id="iqs77y" class="row">
+        <div class="cell">
+          <div class="c13713">What is your sex?
+          </div>
+        </div>
+        <div class="cell">
+          <div class="c15149">Have you smoked tobacco or any other substance in the past 12 months?
+          </div>
+        </div>
+      </div>
+      <button type="button" id="ig359g" onclick="changeColor(this.id)">Male</button>
+      <button type="button" id="iocs9n">Female</button>
+      <button type="button" id="i4fyaa">Yes</button>
+      <button type="button" id="idpxqr">No</button>
+      <div class="c6443">What is your age?
+      </div>
+      <div class="slidecontainer">
+        <input type="range" name="amountRange" min="18" max="69" value="40" onchange="this.nextElementSibling.value=this.value" id="i6z2rg"/>
+        <input type="number" name="amountInput" min="0" max="20" value="0" onchange="this.previousElementSibling.value=this.value" id="i5kwf8"/>
+      </div>
+      <a href="Questionnaire_2(amountSlider).html"><button type="button" id="next">Next
+      </button>
+    </div>
+  </div>
+</div>

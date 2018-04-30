@@ -1,0 +1,65 @@
+<head>
+  <link rel="stylesheet" href="css/Questionnaire_4.css">
+    <?php require 'connect.php';?>
+</head>
+<div class="cell c6911">
+  <div data-gjs="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-brand"><img src="TA Logo.png" alt="Terra Administrators"/></a>
+      <a title="Terra Administrators" class="c11280">Link</a>
+      <div id="iwtm63" class="navbar-burger">
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+      </div>
+      <div data-gjs="navbar-items" class="navbar-items-c">
+        <nav data-gjs="navbar-menu" class="navbar-menu">
+          <a href="#" class="navbar-menu-link">About</a>
+          <a href="#" class="navbar-menu-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="iyrmrl" class="row c3323">
+  <div class="cell c6911">
+    <div class="c5802">Now applying for
+    </div>
+    <div id="it1ejk">Life Cover
+    </div>
+    <div id="QuestionnaireBox" class="cell c6593">
+      <div class="DOB">What is your date of birth?
+      </div>
+      <select name="Year Dropdown" id="YearDropdown"><option value="-Year-">--Select Year--</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option></select>
+      <select name="Month Dropdown" class="MonthDropdown"><option value="--Select Month--">--Select Month--</option><option value="1">Janaury</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select>
+      <select name="Day Dropdown" class="DayDropdown"><option value="--Select Day--">--Select Day--</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+      <div id="iqs77y" class="row">
+        <div class="cell">
+          <div class="Height">What is your height (in inches)?
+          </div>
+        </div>
+      </div>
+      <div class="HeightContainer">
+        <input type="range" name="amountRange" min="39" max="87" value="70" onchange="this.nextElementSibling.value=this.value" step="1" id="rangeSlider"/>
+        <input type="number" name="amountInput" min="39" max="87" value="70" onchange="this.previousElementSibling.value=this.value" id="rangeOutput"/>
+      </div>
+      <div id="iqs77y" class="row">
+        <div class="cell">
+          <div class="Weight">What is your weight (in pounds)?
+          </div>
+        </div>
+      </div>
+      <div class="WeightContainer">
+        <input type="range" name="amountRange" min="88" max="353" value="175" onchange="this.nextElementSibling.value=this.value" step="1" id="rangeSlider"/>
+        <input type="number" name="amountInput" min="88" max="353" value="175" onchange="this.previousElementSibling.value=this.value" id="rangeOutput"/>
+      </div>
+      <a href="Questionnaire_3.html"><button type="button" id="prev" class="prev">Back
+      </button>
+      <a href="Questionnaire_5.html"><button type="button" id="next" class="next">Next
+      </button>
+    </div>
+  </div>
+</div>
